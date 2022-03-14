@@ -1,0 +1,44 @@
+ arr=[]
+size=int(input("enter the size of array"))
+sum=0
+sum1=1
+for i in range(0,size):
+    a=int(input("enter the elements"))
+    arr.append(a)
+    sum=sum+arr[i]
+    sum1=sum1*arr[i]
+if(sum%2==0):
+    print(sum)
+else:
+    if(sum%2==1):
+     print(sum1)
+
+
+
+
+
+
+
+
+x=int(input("enter x value"))
+y=int(input("enter y value"))
+p=int(input("starting range"))
+q=int(input("ending range"))
+count1=0
+count2=0
+ans=0
+ans1=0
+if(p<q):
+   for i in range(p,q+1):
+    if (i%x==0):
+        count1+=1
+        ans1+=i
+    else :
+        if(i%y==0):
+         count2+=1
+         ans+=i
+   print(ans1)
+   print(count1)
+   print(count2)
+   print(ans)
+   print(ans1-ans)
